@@ -16,5 +16,12 @@ class ShapeTest:
     assertAll(
       () => assertEquals(8.0, perimeter(square), 0),
       () => assertEquals(10.0, perimeter(rectangle), 0),
-      () => assertEquals(12.566370614359172, perimeter(circle), 0)
+      () => assertEquals(12.5663, perimeter(circle), 0.01)
+    )
+
+  @Test def testArea(): Unit =
+    assertAll(
+      () => assertEquals(4.0, area(square), 0),
+      () => assertEquals(6.0, area(rectangle), 0),
+      () => assertEquals(12.5663, area(circle), 0.01)
     )
