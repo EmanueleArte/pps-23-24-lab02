@@ -10,14 +10,14 @@ class PositiveTest:
   val negativeString = "negative"
   val positive = Positive
 
-  @Test def testPositiveLambda() =
+  @Test def testPositiveLambda(): Unit =
     assertAll(
       () => assertEquals(positiveString, positive.positive(5)),
       () => assertEquals(positiveString, positive.positive(0)),
       () => assertEquals(negativeString, positive.positive(-5))
     )
 
-  @Test def testPositiveMethod() =
+  @Test def testPositiveMethod(): Unit =
     assertAll(
       () => assertEquals(positiveString, positive.positiveMethod(5)),
       () => assertEquals(positiveString, positive.positiveMethod(0)),
