@@ -2,7 +2,6 @@ package task3
 
 import org.junit.*
 import org.junit.Assert.*
-import org.junit.jupiter.api.Assertions.assertAll
 
 class RecursionTest:
 
