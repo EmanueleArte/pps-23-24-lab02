@@ -15,4 +15,4 @@ class RecursionTest:
     assertThrows(classOf[ArithmeticException], () => gcd(0, 0))
 
   @Test def testGcdWithBothNumbers(): Unit =
-    assertEquals(5, gcd(5, 10))
+    assertEquals(4, gcd(12, 8))

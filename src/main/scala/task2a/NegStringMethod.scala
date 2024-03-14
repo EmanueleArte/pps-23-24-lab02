@@ -1,3 +1,3 @@
 package task2a
 
-def neg(predicate: String => Boolean): String => Boolean = (s: String) => !predicate(s)
+def neg(pred: String => Boolean): String => Boolean = !pred(_)

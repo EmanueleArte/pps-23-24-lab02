@@ -1,3 +1,3 @@
 package task2a
 
-def genericNeg[X](predicate: X => Boolean): X => Boolean = (x: X) => !predicate(x)
+def genericNeg[X](pred: X => Boolean): X => Boolean = !pred(_)
