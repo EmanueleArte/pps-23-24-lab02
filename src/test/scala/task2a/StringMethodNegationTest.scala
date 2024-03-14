@@ -6,7 +6,7 @@ import org.junit.Assert.*
 class StringMethodNegationTest:
 
   val empty: String => Boolean = _ == ""
-  val notEmpty = neg(empty)
+  val notEmpty: String => Boolean = neg(empty)
 
   @Test def testEmptyString(): Unit =
     assertTrue(empty(""))
