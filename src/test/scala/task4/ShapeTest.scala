@@ -25,3 +25,10 @@ class ShapeTest:
       () => assertEquals(6.0, area(rectangle), 0),
       () => assertEquals(12.5663, area(circle), 0.01)
     )
+
+  @Test def testScale(): Unit =
+    assertAll(
+      () => assertEquals(16.0, perimeter(scale(square, 2.0)), 0),
+      () => assertEquals(20.0, perimeter(scale(rectangle, 2.0)), 0),
+      () => assertEquals(25.1326, perimeter(scale(circle, 2.0)), 0.01)
+    )
